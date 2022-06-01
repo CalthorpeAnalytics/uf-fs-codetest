@@ -1,6 +1,5 @@
 import { useState, useRef } from 'react';
 import { Map as ReactMap, Popup } from 'react-map-gl';
-import Panel from './Panel';
 import CityInfo from './CityInfo';
 
 const REACT_APP_MAPBOX_ACCESS_TOKEN =
