@@ -1,5 +1,6 @@
 import { useState, useRef } from 'react';
 import { Map as ReactMap, Popup } from 'react-map-gl';
+import Panel from './Panel';
 import CityInfo from './CityInfo';
 
 const REACT_APP_MAPBOX_ACCESS_TOKEN =
@@ -7,7 +8,7 @@ const REACT_APP_MAPBOX_ACCESS_TOKEN =
 
 function Map() {
   const [popupInfo, setPopupInfo] = useState(null);
-  const [viewport, setViewport] = useState({
+  const [viewState, setViewState] = useState({
     latitude: 37.7577,
     longitude: -102.4376,
     zoom: 4,
@@ -18,12 +19,12 @@ function Map() {
   return (
     <ReactMap
       ref={mapRef}
-      initialViewState={{ ...viewport }}
+      { ...viewState }
+      onMove={evt => setViewState(evt.viewState)}
       mapStyle="mapbox://styles/mapbox/dark-v9"
       mapboxAccessToken={REACT_APP_MAPBOX_ACCESS_TOKEN}
-      onViewportChange={(viewport) => setViewport(viewport)}
+      onViewportChange={(viewState) => setViewState(viewState)}
     >
-      {/* Panel should go here */}
 
       {popupInfo && (
         <Popup

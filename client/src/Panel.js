@@ -1,18 +1,25 @@
 import * as React from 'react';
 
 /**
- * Render a panel component with an input and a list of city cards.
+ * Exercise:
+ * Render a list of cities using the CityCard component.
+ * The cities should be sorted alphabetically.
+ * 
+ * Bonus Requirement:
+ * Implement a text input acting like a filter on the city list.
  * The input should filter the cities by name both in the list and on the map.
- *
- * There are a few existing css classes you may choose to use
- *  - panel : layout and positioning of the card
- *  - input-container : grouping the input and the label together
+ * Only cities with a name that matches the input substring (case insensitive)
+ * should be displayed.
  */
 
 function Panel() {
   return (
     <div className="panel">
-      <h2>Filters</h2>
+      {/*div class="input-container">
+        <label>Filter cities</label>
+        <input id="cityNameFilter" />
+      </div>*/}
+      <h2>Cities</h2>
     </div>
   );
 }
