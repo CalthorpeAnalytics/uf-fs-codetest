@@ -10,7 +10,7 @@ This app was scaffolded using [Create React App](https://reactjs.org/docs/create
 
 ## Goal: Measuring success
 
-Complete the **Basic Requirements** below. This is a  (45 min) exercise, so write the minumum amount of code necessary to fulfill the requirements. If time allows, pick a Bonus Requirement. We will assess your solution based on these criteria:
+Complete the **Basic Requirements** below. This is a  (45 min) exercise, so write the minimum amount of code necessary to fulfill the requirements. If time allows, pick a Bonus Requirement. We will assess your solution based on these criteria:
 
 1. Code functions as specified in Basic Requirements
 2. Code is well-factored and uses common patterns ("good practices")
@@ -21,7 +21,7 @@ This is a pairing exercise! That means we want you to ask questions to clarify t
 ### Basic Requirements
 1. There is an API endpoint to request city data
    1. We strongly recommend you use the scaffolded Express server
-   2. You're welcome to use a different Node server framework, or even a different language, if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.
+   2. You're welcome to use a different Node server framework, or even a different language if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.
 2. The clients calls the endpoint and uses the data to:
    1. render an alphabetically sorted list of cities in the Panel component
    2. render map pins/markers in the correct locations (using provided Pin component)
