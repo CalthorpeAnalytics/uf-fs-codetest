@@ -51,14 +51,14 @@ h2 {
   cursor: pointer;
 }
 
-.image > img {
+.card img {
   grid-area: image;
   height: 75px;
   width: 75px;
   border-radius: 4px;
 }
 
-.text {
+.card .text {
   grid-area: text;
   place-self: center;
 }

@@ -1,39 +1,74 @@
-# The Urban Footprint Frontend Code Test
+# The Urban Footprint Fullstack Code Test
 
-Thank you for your interest in a Software Engineer position with Urban Footprint!
+Thank you for your interest in a Software Engineering position with UrbanFootprint!
 
-This exercise is designed to test your knowledge of Javascript and
-React.  While it does incorporate use of a Mapbox component, prior knowledge of
-Mapbox shouldn't be necessary in order to produce a solution.
+This exercise is designed to test your knowledge of Client/Server interaction over HTTP, manipulating data, and familiarity with React.
+
+While the React app uses a Mapbox component, prior knowledge of Mapbox isn't necessary to produce a solution.
 
 This app was scaffolded using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and uses a React wrapper for Mapbox called [react-mapbox-gl](https://visgl.github.io/react-map-gl/).
 
-The initial state of the app is a fullscreen map with a series of map pins displayed on it, and a FILTERS panel in the upper right corner.
+## Goal: Measuring success
 
-## Goal
-Work on the Feature Requirements below for the FILTERS panel. You're not likely to complete all requirements in the short amount of time we have. Just go through them in order and focus on good, working, well-factored code for the requriements you do complete. Share your screen and review what you have with the interviewer when the time is up.
+Complete the **Basic Requirements** below. If time allows, pick one or both Bons Requirements. This is a timeboxed exercise, so write the minumum amount of code necessary to fulfill the requirements. We will assess your solution based on these criteria:
 
-## FILTER Panel Feature Requirements
-1. When the user types text into the CITY NAME input, only cities whose `name` property contains the input value substring should be displayed on the map.
-   1. Ignore whitespace at the start and end of the input value.
-   2. Upper- and lowercase letters are treated the same when matching.
-2. Use the value of the BOUNDING BOX input to determine the lengths of the sides of the rendered `<BoundingBox/>` component.
-   1. Display only cities whose coordinates are inside the bounding box.
-   2. Center the bounding box on the "centroid" of the set of all cities. A centroid is "the point whose coordinates are the mean values of the coordinates of the points of the set".
+1. Code functions as specified in Basic Requirements
+2. Code is well-factored and uses common patterns ("good practices")
+3. You can point to improvements you'd make given more time
 
-A working implementation of the solution can be seen [here](https://calthorpeanalytics.github.io/uf-fe-takehome-solution/) (note that the UI may look slightly different).
-1. As text is typed in the CITY NAME filter, first 'd' hides all but 5 cities; typing 'de' shows Denver or Philadelphia, then 'den' shows only Denver.
-2. As a smaller number is entered into the LENGTH input, the size of the bounding square decreases and cities are filtered out.
+This is a pairing exercise! That means we want you to ask questions to clarify the requirements and talk aloud as you consider different solutions. The interviewers will help point out syntax errors and give you hints if you get stuck. You are free to use the internet to look up APIs.
 
-## Running the App
+### Basic Requirements
+1. There is an API endpoint to request city data
+   1. We strongly recommend you use the scaffolded Express server
+   2. You're welcome to use a different Node server framework, or even a different language, if you prefer. However, keep in mindyou have 45 minutes to solve the Basic Requirements.
+2. The clients calls the endpoint and uses the data to:
+   1. render an alphabetically sorted list of cities in the Panel component
+   2. render map pins/markers in the correct locations (using provided Pin component)
+
+### Bonus requirements
+
+Choose one (or both)
+1. Add a text input field to the top of the sidebar to filter the cities displayed
+   1. any city that matches the substring (case insensitive) should be displayed
+   2. both sidebar list and map markers should be filtered
+2. Click sidebar City list item to zoom to city on map
+   1. See `react-map-gl` [Controlled Map example](https://visgl.github.io/react-map-gl/docs/get-started/state-management#controlled-map)
+
+## Getting started
+
 If you need to, install Node and npm: [download](https://nodejs.org/en/download/) or use [`nvm`](https://github.com/nvm-sh/nvm#installing-and-updating).
 
+### Clone the repo
+
 ```
-git clone git@github.com:CalthorpeAnalytics/uf-fe-codetest.git
-cd uf-fe-codetest
-npm install
-npm start
+$ git clone git@github.com:CalthorpeAnalytics/uf-fs-codetest.git
 ```
+
+### Install Dependencies
+
+```
+$ cd uf-fs-codetest
+$ ./install_deps.sh
+```
+
+### Run the API server
+
+In a terminal, run:
+
+```
+$ cd server
+$ npm start
+```
+### Run the React app
+
+In a separate terminal, run:
+
+```
+$ cd client
+$ npm start
+```
+
 
 Open [http://localhost:3000](http://localhost:3000) to load the app in the browser.
 

@@ -2,8 +2,11 @@ import * as React from 'react';
 
 /**
  * Exercise:
- * Render a list of cities using the CityCard component.
- * The cities should be sorted alphabetically.
+ * Render an alphabetically sorterd list of cities.
+ * There are some CSS classes you can use:
+ *  - card: container layout for a city list item
+ *    - image: css for city <img/> element
+ *    - text: css for the city card info
  * 
  * Bonus Requirement:
  * Implement a text input acting like a filter on the city list.
