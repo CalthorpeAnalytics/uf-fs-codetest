@@ -10,7 +10,7 @@ This app was scaffolded using [Create React App](https://reactjs.org/docs/create
 
 ## Goal: Measuring success
 
-Complete the **Basic Requirements** below. If time allows, pick one or both Bons Requirements. This is a timeboxed exercise, so write the minumum amount of code necessary to fulfill the requirements. We will assess your solution based on these criteria:
+Complete the **Basic Requirements** below. This is a timeboxed exercise, so write the minumum amount of code necessary to fulfill the requirements. If time allows, pick a Bonus Requirement. We will assess your solution based on these criteria:
 
 1. Code functions as specified in Basic Requirements
 2. Code is well-factored and uses common patterns ("good practices")
@@ -28,11 +28,11 @@ This is a pairing exercise! That means we want you to ask questions to clarify t
 
 ### Bonus requirements
 
-Choose one (or both)
+Choose one:
 1. Add a text input field to the top of the sidebar to filter the cities displayed
    1. any city that matches the substring (case insensitive) should be displayed
    2. both sidebar list and map markers should be filtered
-2. Click sidebar City list item to zoom to city on map
+2. Click sidebar City list item to zoom to that city on the map
    1. See `react-map-gl` [Controlled Map example](https://visgl.github.io/react-map-gl/docs/get-started/state-management#controlled-map)
 
 ## Getting started
