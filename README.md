@@ -6,7 +6,7 @@ This exercise is designed to test your knowledge of Client/Server interaction ov
 
 While the React app uses a Mapbox component, prior knowledge of Mapbox isn't necessary to produce a solution.
 
-This app was scaffolded using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and uses a React wrapper for Mapbox called [react-mapbox-gl](https://visgl.github.io/react-map-gl/).
+This app was scaffolded using [Create React App](https://reactjs.org/docs/create-a-new-react-app.html) and uses a React wrapper for Mapbox called [react-map-gl](https://visgl.github.io/react-map-gl/).
 
 ## Goal: Measuring success
 
