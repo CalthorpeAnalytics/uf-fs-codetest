@@ -2,7 +2,7 @@ import * as React from 'react';
 
 /**
  * Exercise:
- * Render an alphabetically sorterd list of cities.
+ * Render an alphabetically sorted list of cities.
  * There are some CSS classes you can use:
  *  - card: container layout for a city list item
  *    - image: css for city <img/> element
