@@ -20,20 +20,20 @@ This is a pairing exercise! That means we want you to ask questions to clarify t
 
 ### Basic Requirements
 1. There is an API endpoint to request city data
-   1. We strongly recommend you use the scaffolded Express server
-   2. You're welcome to use a different Node server framework, or even a different language if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.
+   a. We strongly recommend you use the scaffolded Express server
+   b. You're welcome to use a different Node server framework, or even a different language if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.
 2. The clients calls the endpoint and uses the data to:
-   1. render an alphabetically sorted list of cities in the Panel component
-   2. render map pins/markers in the correct locations (using provided Pin component)
+   a. render an alphabetically sorted list of cities in the Panel component
+   b. render map pins/markers in the correct locations (using provided Pin component)
 
 ### Bonus requirements
 
 Choose one:
 1. Add a text input field to the top of the sidebar to filter the cities displayed
-   1. any city that matches the substring (case insensitive) should be displayed
-   2. both sidebar list and map markers should be filtered
+   a. any city that matches the substring (case insensitive) should be displayed
+   b. both sidebar list and map markers should be filtered
 2. Click sidebar City list item to zoom to that city on the map
-   1. See `react-map-gl` [Controlled Map example](https://visgl.github.io/react-map-gl/docs/get-started/state-management#controlled-map)
+   a. See `react-map-gl` [Controlled Map example](https://visgl.github.io/react-map-gl/docs/get-started/state-management#controlled-map)
 
 ## Getting started
 
