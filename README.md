@@ -19,11 +19,11 @@ Complete the **Basic Requirements** below. This is a  (45 min) exercise, so writ
 This is a pairing exercise! That means we want you to ask questions to clarify the requirements and talk aloud as you consider different solutions. The interviewers will help point out syntax errors and give you hints if you get stuck. You are free to use the internet to look up APIs.
 
 ### Basic Requirements
-1. There is an API endpoint to request city data
-   a. We strongly recommend you use the scaffolded Express server
-   b. You're welcome to use a different Node server framework, or even a different language if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.
-2. The clients calls the endpoint and uses the data to:
-   a. render an alphabetically sorted list of cities in the Panel component
+1. There is an API endpoint to request city data  
+   a. We strongly recommend you use the scaffolded Express server  
+   b. You're welcome to use a different Node server framework, or even a different language if you prefer. However, keep in mind you have 45 minutes to solve all Basic Requirements.  
+2. The clients calls the endpoint and uses the data to:  
+   a. render an alphabetically sorted list of cities in the Panel component  
    b. render map pins/markers in the correct locations (using provided Pin component)
 
 ### Bonus requirements
